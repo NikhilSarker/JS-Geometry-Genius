@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Genius</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- Main container -->
+    <div class="flex flex-col lg:flex-row space-x-6">
+      <!-- Shape container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-lg  w-3/4 gap-6">
+        <!-- First Card -->
+          <div class="card  bg-white border-2 border-solid border-[#1111111A]">
+            <figure><img class="w-60 mt-10" src="./images/triangle.png" alt="triangle shape image" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">Triangle</h2>
+              <p >Area (A) = 0.5 x b x h</p>
+              <!-- Input container -->
+              <div class="flex flex-col lg:flex-row gap-4 mt-5 mb-8 ">
+                <div class="flex-1 ">
+                  <input class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]" type="number" name="b" placeholder="b">
+                  <label for="b">cm</label>
+                </div>
+                <div class="flex-1">
+                  <input class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]" type="number" name="h" placeholder="h">
+                  <label for="h">cm</label>
+                </div>
+              </div>
+              <div class="card-actions justify-center">
+                <button class=" w-[350px] bg-[#1090D8] btn rounded-lg text-white text-bold  hover:text-black ">Calculate</button>
+              </div>
+            </div>
+          </div>
+        <!-- Second Card -->
+          <div class="card  bg-white border-2 border-solid border-[#1111111A]">
+            <figure><img class="w-60 mt-10" src="./images/rectangle.png" alt="rectangle shape image" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">Rectangle</h2>
+              <p >Area (A) = w x I</p>
+              <!-- Input container -->
+              <div class="flex flex-col lg:flex-row gap-4 mt-5 mb-8 ">
+                <div class="flex-1 ">
+                  <input class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]" type="number" name="w" placeholder="W">
+                  <label for="w">cm</label>
+                </div>
+                <div class="flex-1">
+                  <input class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]" type="number" name="i" placeholder="I">
+                  <label for="i">cm</label>
+                </div>
+              </div>
+              <div class="card-actions justify-center">
+                <button class=" w-[350px] bg-[#1090D8] btn rounded-lg text-white text-bold  hover:text-black ">Calculate</button>
+              </div>
+            </div>
+          </div>
+        <!-- Third Card -->
+          <div class="card  bg-white border-2 border-solid border-[#1111111A]">
+            <figure><img class="w-60 mt-10" src="./images/parallelogram.png" alt="parallelogram shape image" /></figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold text-[#414141]">Parallelogram</h2>
+              <p >Area (A) = b x h</p>
+              <p>b=10cm, &nbsp; h=12cm</p>
+              <div class="card-actions justify-center">
+                <button class=" w-[350px] bg-[#1090D8] btn rounded-lg text-white text-bold hover:text-black ">Calculate</button>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+      <!-- Aria calculation container -->
+      <div class=" w-[23.5%] h-[450px] text-center bg-white border-2 border-solid border-[#1111111A] rounded-lg ">
+        <h3 class="text-2xl font-bold underline mt-8">Aria Calculation</h3>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
