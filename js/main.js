@@ -7,7 +7,14 @@ triangle_btn.addEventListener('click', function(){
   let result = 0.5 *  triangle_base_value * triangle_height_value;
     // Validation
     if(isNaN(triangle_base_value) || isNaN(triangle_height_value)){
-      alert('Please give number not string!');
+      // alert('Please give number not string!');
+      // Display the error message
+      let triangle_error_message = document.getElementById('triangle_error_message');
+      let h3 = document.createElement('h3');
+      h3.style.color = 'red';
+      h3.innerText = 'Please give number not string!';
+      triangle_error_message.appendChild(h3);
+
       return;
     }
   
@@ -28,7 +35,12 @@ rectangle_btn.addEventListener('click', function(){
   let result = rectangle_width_value * rectangle_length_value;
    // Validation
    if(isNaN(rectangle_width_value) || isNaN(rectangle_length_value)){
-    alert('Please give number not string!');
+    // alert('Please give number not string!');
+    let rectangle_error_message = document.getElementById('rectangle_error_message');
+    let h3 = document.createElement('h3');
+    h3.style.color = 'red';
+    h3.innerText = 'Please give number not string!';
+    rectangle_error_message.appendChild(h3);
     return;
   }
   setValue('rectangle_result', result);
@@ -48,7 +60,12 @@ parallelogram_btn.addEventListener('click', function(){
   let result = parallelogram_base_value * parallelogram_height_value;
    // Validation
    if(isNaN(parallelogram_base_value) || isNaN(parallelogram_height_value)){
-    alert('Please give number not string!');
+    // alert('Please give number not string!');
+    let parallelogram_error_message = document.getElementById('parallelogram_error_message');
+    let h3 = document.createElement('h3');
+    h3.style.color = 'red';
+    h3.innerText = 'Please give number not string!';
+    parallelogram_error_message.appendChild(h3);
     return;
   }
   setValue('parallelogram_result', result);
@@ -67,7 +84,12 @@ rhombus_btn.addEventListener('click', function(){
   let result = 0.5 * rhombus_first_diagonal_value * rhombus_second_diagonal_value;
    // Validation
    if(isNaN(rhombus_first_diagonal_value) || isNaN(rhombus_second_diagonal_value)){
-    alert('Please give number not string!');
+    // alert('Please give number not string!');
+    let rhombus_error_message = document.getElementById('rhombus_error_message');
+    let h3 = document.createElement('h3');
+    h3.style.color = 'red';
+    h3.innerText = 'Please give number not string!';
+    rhombus_error_message.appendChild(h3);
     return;
   }
   setValue('rhombus_result', result);
@@ -86,7 +108,12 @@ pentagon_btn.addEventListener('click', function(){
   let result = 0.5 * pentagon_perimeter_value * pentagon_apothem_value;
    // Validation
    if(isNaN(pentagon_perimeter_value) || isNaN(pentagon_apothem_value)){
-    alert('Please give number not string!');
+    // alert('Please give number not string!');
+    let pentagon_error_message = document.getElementById('pentagon_error_message');
+    let h3 = document.createElement('h3');
+    h3.style.color = 'red';
+    h3.innerText = 'Please give number not string!';
+    pentagon_error_message.appendChild(h3);
     return;
   }
   setValue('pentagon_result', result);
@@ -109,7 +136,12 @@ ellipse_btn.addEventListener('click', function(){
   let resultToFixed = result.toFixed(2);
    // Validation
    if(isNaN(ellipse_a_axis_value) || isNaN(ellipse_b_axis_value)){
-    alert('Please give number not string!');
+    // alert('Please give number not string!');
+    let ellipse_error_message = document.getElementById('ellipse_error_message');
+    let h3 = document.createElement('h3');
+    h3.style.color = 'red';
+    h3.innerText = 'Please give number not string!';
+    ellipse_error_message.appendChild(h3);
     return;
   }
   setValue('ellipse_result', resultToFixed);
