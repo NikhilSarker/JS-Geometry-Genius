@@ -154,7 +154,9 @@
                   <label for="parallelogram_height">cm</label>
                 </div>
               </div>
-              <p>Area: <span id="parallelogram_result">00</span> cm<sup>2</sup></p>
+              <p>
+                Area: <span id="parallelogram_result">00</span> cm<sup>2</sup>
+              </p>
               <div class="card-actions justify-center">
                 <button
                   id="parallelogram_btn"
@@ -168,12 +170,13 @@
         </div>
         <!-- Aria calculation container -->
         <div
-          class="w-[23.5%] h-[450px]  bg-white border-2 border-solid border-[#1111111A] rounded-lg"
+          class="w-[23.5%] h-[450px] bg-white border-2 border-solid border-[#1111111A] rounded-lg"
         >
-          <div class="text-center text-2xl font-bold underline mt-8">Aria Calculation</div>
+          <div class="text-center text-2xl font-bold underline mt-8">
+            Aria Calculation
+          </div>
           <div id="calculation_entry"></div>
         </div>
-
       </div>
       <!-- Shape container -->
       <div
@@ -194,31 +197,31 @@
             </h2>
             <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
             <p>d<sub>1</sub>=16cm, &nbsp; d<sub>2</sub>=8cm</p>
-            
-              <!-- Input container -->
-              <div class="flex flex-col lg:flex-row gap-4 mt-5 mb-8">
-                <div class="flex-1">
-                  <input
-                    id="rhombus_first_diagonal"
-                    class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
-                    type="number"
-                    name="rhombus_first_diagonal"
-                    placeholder="d1"
-                  />
-                  <label for="rhombus_first_diagonal">cm</label>
-                </div>
-                <div class="flex-1">
-                  <input
-                    id="rhombus_second_diagonal"
-                    class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
-                    type="number"
-                    name="rhombus_second_diagonal"
-                    placeholder="d2"
-                  />
-                  <label for="rhombus_second_diagonal">cm</label>
-                </div>
+
+            <!-- Input container -->
+            <div class="flex flex-col lg:flex-row gap-4 mt-5 mb-8">
+              <div class="flex-1">
+                <input
+                  id="rhombus_first_diagonal"
+                  class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
+                  type="number"
+                  name="rhombus_first_diagonal"
+                  placeholder="d1"
+                />
+                <label for="rhombus_first_diagonal">cm</label>
               </div>
-              <p>Area: <span id="rhombus_result">00</span> cm<sup>2</sup></p>
+              <div class="flex-1">
+                <input
+                  id="rhombus_second_diagonal"
+                  class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
+                  type="number"
+                  name="rhombus_second_diagonal"
+                  placeholder="d2"
+                />
+                <label for="rhombus_second_diagonal">cm</label>
+              </div>
+            </div>
+            <p>Area: <span id="rhombus_result">00</span> cm<sup>2</sup></p>
             <div class="card-actions justify-center">
               <button
                 class="w-11/12 bg-[#1090D8] btn rounded-lg text-white text-bold hover:text-black"
@@ -241,8 +244,32 @@
             <h2 class="text-center text-2xl font-bold text-[#414141]">
               Pentagon
             </h2>
-            <p>Area (A) = 0.5 x p x b</p>
-            <p>p=6cm, &nbsp; b=10cm</p>
+            <p>Area (A) = 0.5 x p x a</p>
+            <p>p=6cm, &nbsp; a=10cm</p>
+            <!-- Input container -->
+            <div class="flex flex-col lg:flex-row gap-4 mt-5 mb-8">
+              <div class="flex-1">
+                <input
+                  id="pentagon_perimeter"
+                  class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
+                  type="number"
+                  name="pentagon_perimeter"
+                  placeholder="p"
+                />
+                <label for="pentagon_perimeter">cm</label>
+              </div>
+              <div class="flex-1">
+                <input
+                  id="pentagon_apothem"
+                  class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
+                  type="number"
+                  name="pentagon_apothem"
+                  placeholder="a"
+                />
+                <label for="pentagon_apothem">cm</label>
+              </div>
+            </div>
+            <p>Area: <span id="pentagon_result">00</span> cm<sup>2</sup></p>
             <div class="card-actions justify-center">
               <button
                 class="w-11/12 bg-[#1090D8] btn rounded-lg text-white text-bold hover:text-black"
@@ -267,6 +294,30 @@
             </h2>
             <p>Area (A) = &prod; ab</p>
             <p>a=10cm, &nbsp; b=4cm</p>
+            <!-- Input container -->
+            <div class="flex flex-col lg:flex-row gap-4 mt-5 mb-8">
+              <div class="flex-1">
+                <input
+                  id="ellipse_a_axis"
+                  class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
+                  type="number"
+                  name="ellipse_a_axis"
+                  placeholder="a"
+                />
+                <label for="ellipse_a_axis">cm</label>
+              </div>
+              <div class="flex-1">
+                <input
+                  id="ellipse_b_axis"
+                  class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
+                  type="number"
+                  name="ellipse_b_axis"
+                  placeholder="b"
+                />
+                <label for="ellipse_b_axis">cm</label>
+              </div>
+            </div>
+            <p>Area: <span id="ellipse_result">00</span> cm<sup>2</sup></p>
             <div class="card-actions justify-center">
               <button
                 class="w-11/12 bg-[#1090D8] btn rounded-lg text-white text-bold hover:text-black"
