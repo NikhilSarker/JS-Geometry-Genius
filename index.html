@@ -194,6 +194,31 @@
             </h2>
             <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
             <p>d<sub>1</sub>=16cm, &nbsp; d<sub>2</sub>=8cm</p>
+            
+              <!-- Input container -->
+              <div class="flex flex-col lg:flex-row gap-4 mt-5 mb-8">
+                <div class="flex-1">
+                  <input
+                    id="rhombus_first_diagonal"
+                    class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
+                    type="number"
+                    name="rhombus_first_diagonal"
+                    placeholder="d1"
+                  />
+                  <label for="rhombus_first_diagonal">cm</label>
+                </div>
+                <div class="flex-1">
+                  <input
+                    id="rhombus_second_diagonal"
+                    class="w-24 h-8 placeholder:p-3 bg-[#f1f1f1]"
+                    type="number"
+                    name="rhombus_second_diagonal"
+                    placeholder="d2"
+                  />
+                  <label for="rhombus_second_diagonal">cm</label>
+                </div>
+              </div>
+              <p>Area: <span id="rhombus_result">00</span> cm<sup>2</sup></p>
             <div class="card-actions justify-center">
               <button
                 class="w-11/12 bg-[#1090D8] btn rounded-lg text-white text-bold hover:text-black"

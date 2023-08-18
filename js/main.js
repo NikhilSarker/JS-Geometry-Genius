@@ -87,7 +87,7 @@ function addToCalculationEntry(shapeType, result){
   let calculation_entry = document.getElementById('calculation_entry');
   let count = calculation_entry.childElementCount;
   let paragraph = document.createElement('p');
-  paragraph.classList.add('my-5');
+  paragraph.classList.add('my-5',);
   paragraph.classList.add('mx-2');
   // paragraph.innerHTML = shapeType + ' '+ result;
   paragraph.innerHTML = 
