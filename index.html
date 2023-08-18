@@ -12,13 +12,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="navbar bg-[#1090D81A]">
+        <div class="navbar-start">
+
+          <a class="btn btn-ghost normal-case text-left text-[#11111199] text-xl md:text-3xl font-medium">Interactive <br>
+            Geometry Genius</a>
+        </div>
+
+        <div class="navbar-end py-10">
+          <a class="btn text-sm md:text-lg font-bold text-white bg-[#1090D8]">Blog</a>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- Main container -->
-      <div class="flex flex-col lg:flex-row space-x-6">
+      <div class="flex flex-col lg:flex-row gap-6 mt-12 justify-center items-center md:items-start ">
         <!-- Shape container -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-lg w-3/4 gap-6"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-lg mx-auto w-3/4 gap-6"
         >
           <!-- First Card -->
           <div class="card bg-white border-2 border-solid border-[#1111111A]">
@@ -170,22 +182,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Aria calculation container -->
-        <div
-          class="w-[23.5%] h-[450px] bg-white border-2 border-solid border-[#1111111A] rounded-lg"
-        >
-          <div class="text-center text-2xl font-bold underline mt-8">
-            Aria Calculation
-          </div>
-          <div id="calculation_entry"></div>
-        </div>
-      </div>
-      <!-- Shape container -->
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-lg w-3/4 gap-6 mt-6"
-      >
-        <!-- First Card -->
+                  <!-- fourth Card -->
         <div class="card bg-white border-2 border-solid border-[#1111111A]">
           <figure>
             <img
@@ -235,7 +232,7 @@
             </div>
           </div>
         </div>
-        <!-- Second Card -->
+        <!-- Fifth Card -->
         <div class="card bg-white border-2 border-solid border-[#1111111A]">
           <figure>
             <img
@@ -284,7 +281,7 @@
             </div>
           </div>
         </div>
-        <!-- Third Card -->
+        <!-- Six Card -->
         <div class="card bg-white border-2 border-solid border-[#1111111A]">
           <figure>
             <img
@@ -332,6 +329,16 @@
               </button>
             </div>
           </div>
+        </div>
+        </div>
+        <!-- Aria calculation container -->
+        <div
+          class="w-9/12 mx-auto lg:w-[23.5%] h-[450px] bg-white border-2 border-solid border-[#1111111A] rounded-lg"
+        >
+          <div class="text-center text-2xl font-bold underline mt-8">
+            Aria Calculation
+          </div>
+          <div id="calculation_entry"></div>
         </div>
       </div>
     </main>
