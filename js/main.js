@@ -5,6 +5,11 @@ triangle_btn.addEventListener('click', function(){
   let triangle_base_value = getInputValue('triangle_base');
   let triangle_height_value = getInputValue('triangle_height');
   let result = 0.5 *  triangle_base_value * triangle_height_value;
+    // Validation
+    if(isNaN(triangle_base_value) || isNaN(triangle_height_value)){
+      alert('Please give number not string!');
+      return;
+    }
   
   setValue('triangle_result', result);
 
@@ -21,7 +26,11 @@ rectangle_btn.addEventListener('click', function(){
   let rectangle_width_value = getInputValue('rectangle_width');
   let rectangle_length_value = getInputValue('rectangle_length');
   let result = rectangle_width_value * rectangle_length_value;
-  
+   // Validation
+   if(isNaN(rectangle_width_value) || isNaN(rectangle_length_value)){
+    alert('Please give number not string!');
+    return;
+  }
   setValue('rectangle_result', result);
 
   // Add to calculation entry
@@ -37,7 +46,11 @@ parallelogram_btn.addEventListener('click', function(){
   let parallelogram_base_value = getInputValue('parallelogram_base');
   let parallelogram_height_value = getInputValue('parallelogram_height');
   let result = parallelogram_base_value * parallelogram_height_value;
-  
+   // Validation
+   if(isNaN(parallelogram_base_value) || isNaN(parallelogram_height_value)){
+    alert('Please give number not string!');
+    return;
+  }
   setValue('parallelogram_result', result);
 
   // Add to calculation entry
@@ -52,7 +65,11 @@ rhombus_btn.addEventListener('click', function(){
   let rhombus_first_diagonal_value = getInputValue('rhombus_first_diagonal');
   let rhombus_second_diagonal_value = getInputValue('rhombus_second_diagonal');
   let result = 0.5 * rhombus_first_diagonal_value * rhombus_second_diagonal_value;
-  
+   // Validation
+   if(isNaN(rhombus_first_diagonal_value) || isNaN(rhombus_second_diagonal_value)){
+    alert('Please give number not string!');
+    return;
+  }
   setValue('rhombus_result', result);
 
   // Add to calculation entry
@@ -67,7 +84,11 @@ pentagon_btn.addEventListener('click', function(){
   let pentagon_perimeter_value = getInputValue('pentagon_perimeter');
   let pentagon_apothem_value = getInputValue('pentagon_apothem');
   let result = 0.5 * pentagon_perimeter_value * pentagon_apothem_value;
-  
+   // Validation
+   if(isNaN(pentagon_perimeter_value) || isNaN(pentagon_apothem_value)){
+    alert('Please give number not string!');
+    return;
+  }
   setValue('pentagon_result', result);
 
   // Add to calculation entry
@@ -86,7 +107,11 @@ ellipse_btn.addEventListener('click', function(){
   // let piToFixed = pi.toFixed(2);
   let result = pi * ellipse_a_axis_value * ellipse_b_axis_value;
   let resultToFixed = result.toFixed(2);
-  
+   // Validation
+   if(isNaN(ellipse_a_axis_value) || isNaN(ellipse_b_axis_value)){
+    alert('Please give number not string!');
+    return;
+  }
   setValue('ellipse_result', resultToFixed);
 
   // Add to calculation entry
@@ -135,3 +160,10 @@ function addToCalculationEntry(shapeType, result){
   calculation_entry.appendChild(paragraph);
 
 }
+
+/*
+*** Data Validation:
+    1. Set the proper type of the input field.Example(number, text, email and file),
+    2. check type using typeof.
+    3. isNaN is checking whether input is number or not.
+*/
