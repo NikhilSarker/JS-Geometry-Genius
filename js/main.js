@@ -1,45 +1,34 @@
 // Triangle calculation
+
 let triangle_btn = document.getElementById('triangle_btn');
 triangle_btn.addEventListener('click', function(){
-  // Get triangle base value
-  let triangle_base = document.getElementById('triangle_base');
-  let triangle_base_text = triangle_base.value;
-  let triangle_base_value = parseFloat(triangle_base_text);
-  triangle_base.value = '';
-// Get triangle height value
-  let triangle_height = document.getElementById('triangle_height');
-  let triangle_height_text = triangle_height.value;
-  let triangle_height_value = parseFloat(triangle_height_text);
-  triangle_height.value = '';
-  let result = 0.5 * triangle_base_value * triangle_height_value;
-  // Set the result
-  let triangle_result = document.getElementById('triangle_result');
-  triangle_result.innerText = result;
-  addToCalculationEntry('Triangle', result);
+  let triangle_base_value = getInputValue('triangle_base');
+  let triangle_height_value = getInputValue('triangle_height');
+  let result = 0.5 *  triangle_base_value * triangle_height_value;
   
+  setValue('triangle_result', result);
+
+  // Add to calculation entry
+  addToCalculationEntry('Triangle', result);
+
+
 })
 
 // Rectangle calculation
+
 let rectangle_btn = document.getElementById('rectangle_btn');
 rectangle_btn.addEventListener('click', function(){
-  // Get triangle base value
-  let rectangle_width = document.getElementById('rectangle_width');
-  let rectangle_width_text = rectangle_width.value;
-  let rectangle_width_value = parseFloat(rectangle_width_text);
-  rectangle_width.value = '';
-// Get triangle height value
-  let rectangle_length = document.getElementById('rectangle_length');
-  let rectangle_length_text = rectangle_length.value;
-  let rectangle_length_value = parseFloat(rectangle_length_text);
-  rectangle_length.value = '';
+  let rectangle_width_value = getInputValue('rectangle_width');
+  let rectangle_length_value = getInputValue('rectangle_length');
   let result = rectangle_width_value * rectangle_length_value;
-  // Set the result
-  let rectangle_result = document.getElementById('rectangle_result');
-  rectangle_result.innerText = result;
-  addToCalculationEntry('Rectangle', result);
   
-})
+  setValue('rectangle_result', result);
 
+  // Add to calculation entry
+  addToCalculationEntry('Rectangle', result);
+
+
+})
 
 // parallelogram calculation
 
@@ -53,6 +42,55 @@ parallelogram_btn.addEventListener('click', function(){
 
   // Add to calculation entry
   addToCalculationEntry('Parallelogram', result);
+
+
+})
+// Rhombus calculation
+
+let rhombus_btn = document.getElementById('rhombus_btn');
+rhombus_btn.addEventListener('click', function(){
+  let rhombus_first_diagonal_value = getInputValue('rhombus_first_diagonal');
+  let rhombus_second_diagonal_value = getInputValue('rhombus_second_diagonal');
+  let result = 0.5 * rhombus_first_diagonal_value * rhombus_second_diagonal_value;
+  
+  setValue('rhombus_result', result);
+
+  // Add to calculation entry
+  addToCalculationEntry('Rhombus', result);
+
+
+})
+// Pentagon calculation
+
+let pentagon_btn = document.getElementById('pentagon_btn');
+pentagon_btn.addEventListener('click', function(){
+  let pentagon_perimeter_value = getInputValue('pentagon_perimeter');
+  let pentagon_apothem_value = getInputValue('pentagon_apothem');
+  let result = 0.5 * pentagon_perimeter_value * pentagon_apothem_value;
+  
+  setValue('pentagon_result', result);
+
+  // Add to calculation entry
+  addToCalculationEntry('Pentagon', result);
+
+
+})
+// Ellipse calculation
+
+let ellipse_btn = document.getElementById('ellipse_btn');
+ellipse_btn.addEventListener('click', function(){
+  let ellipse_a_axis_value = getInputValue('ellipse_a_axis');
+  let ellipse_b_axis_value = getInputValue('ellipse_b_axis');
+  let pi = Math.PI;
+  
+  // let piToFixed = pi.toFixed(2);
+  let result = pi * ellipse_a_axis_value * ellipse_b_axis_value;
+  let resultToFixed = result.toFixed(2);
+  
+  setValue('ellipse_result', resultToFixed);
+
+  // Add to calculation entry
+  addToCalculationEntry('Ellipse', resultToFixed);
 
 
 })
